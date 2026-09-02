@@ -25,29 +25,32 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-        with:
-          cache-read-only: false
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
       - name: Accept Android SDK licenses
-        run: |
-          yes | sdkmanager --licenses > /dev/null || true
+        run: yes | sdkmanager --licenses >/dev/null || true
 
-      - name: Make gradlew executable
-        run: chmod +x gradlew || true
+      - name: Ensure Gradle Wrapper files
+        run: |
+          mkdir -p gradle/wrapper
+          if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
+            echo "Downloading gradle-wrapper.jar..."
+            curl -sL -o gradle/wrapper/gradle-wrapper.jar \
+              https://github.com/gradle/gradle/raw/v8.9.0/gradle/wrapper/gradle-wrapper.jar
+          fi
+          if [ ! -f gradlew ]; then
+            echo "Downloading gradlew script..."
+            curl -sL -o gradlew https://raw.githubusercontent.com/gradle/gradle/v8.9.0/gradlew
+          fi
+          chmod +x gradlew
 
       - name: Build Debug APK
-        run: |
-          if [ -f ./gradlew ]; then
-            ./gradlew assembleDebug --stacktrace --no-daemon
-          else
-            gradle assembleDebug --stacktrace --no-daemon
-          fi
+        run: ./gradlew assembleDebug --stacktrace --no-daemon
 
-      - name: List APK outputs
-        run: find app/build/outputs -name "*.apk" -type f || true
+      - name: List built APKs
+        run: find app/build/outputs -name "*.apk" -type f
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
