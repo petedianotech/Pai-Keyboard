@@ -37,7 +37,7 @@
         <Button style="@style/KeyButton" android:id="@+id/sym_hash" android:text="#" />
         <Button style="@style/KeyButton" android:id="@+id/sym_dollar" android:text="$" />
         <Button style="@style/KeyButton" android:id="@+id/sym_percent" android:text="%" />
-        <Button style="@style/KeyButton" android:id="@+id/sym_amp" android:text="&" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_amp" android:text="@string/sym_amp" />
         <Button style="@style/KeyButton" android:id="@+id/sym_star" android:text="*" />
         <Button style="@style/KeyButton" android:id="@+id/sym_minus" android:text="-" />
         <Button style="@style/KeyButton" android:id="@+id/sym_plus" android:text="+" />
@@ -53,8 +53,8 @@
         android:paddingHorizontal="8dp">
 
         <Button style="@style/KeyButton" android:id="@+id/sym_underscore" android:text="_" />
-        <Button style="@style/KeyButton" android:id="@+id/sym_lt" android:text="<" />
-        <Button style="@style/KeyButton" android:id="@+id/sym_gt" android:text=">" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_lt" android:text="@string/sym_lt" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_gt" android:text="@string/sym_gt" />
         <Button style="@style/KeyButton" android:id="@+id/sym_bracket_l" android:text="[" />
         <Button style="@style/KeyButton" android:id="@+id/sym_bracket_r" android:text="]" />
         <Button style="@style/KeyButton" android:id="@+id/sym_brace_l" android:text="{" />
@@ -69,8 +69,8 @@
         android:orientation="horizontal"
         android:layout_marginBottom="3dp">
 
-        <Button style="@style/KeyButton.Special" android:id="@+id/sym_more" android:text="=\<" android:layout_weight="1.4" android:textSize="13sp" />
-        <Button style="@style/KeyButton" android:id="@+id/sym_quote" android:text=""" />
+        <Button style="@style/KeyButton.Special" android:id="@+id/sym_more" android:text="@string/sym_more" android:layout_weight="1.4" android:textSize="13sp" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_quote" android:text="@string/sym_quote" />
         <Button style="@style/KeyButton" android:id="@+id/sym_apostrophe" android:text="'" />
         <Button style="@style/KeyButton" android:id="@+id/sym_colon" android:text=":" />
         <Button style="@style/KeyButton" android:id="@+id/sym_semicolon" android:text=";" />
