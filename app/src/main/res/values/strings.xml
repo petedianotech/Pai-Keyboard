@@ -7,10 +7,10 @@
     <string name="enable_keyboard">Enable Pai Keyboard</string>
     <string name="select_keyboard">Select Pai Keyboard</string>
     <string name="welcome_title">Welcome to Pai Keyboard</string>
-    <string name="welcome_subtitle">A fast, beautiful &amp; power-efficient keyboard designed to feel better than Gboard.</string>
+    <string name="welcome_subtitle">A fast, beautiful & power-efficient keyboard designed to feel better than Gboard.</string>
     <string name="feature_fast">Lightning fast key response</string>
     <string name="feature_design">Professional modern design</string>
-    <string name="feature_battery">Battery &amp; memory optimized</string>
+    <string name="feature_battery">Battery & memory optimized</string>
     <string name="feature_privacy">100% offline • No data collection</string>
     <string name="open_settings">Open System Keyboard Settings</string>
     <string name="open_input_settings">Choose Input Method</string>
@@ -20,4 +20,11 @@
     <string name="key_search">search</string>
     <string name="key_next">next</string>
     <string name="key_send">send</string>
+
+    <!-- Symbol keys (escaped properly here) -->
+    <string name="sym_amp">&</string>
+    <string name="sym_lt"><</string>
+    <string name="sym_gt">></string>
+    <string name="sym_quote">"</string>
+    <string name="sym_more">=\<</string>
 </resources>
