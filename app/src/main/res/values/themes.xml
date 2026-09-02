@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PaiKeyboard" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pai_primary</item>
+        <item name="colorPrimaryDark">@color/pai_primary_dark</item>
+        <item name="colorAccent">@color/pai_accent</item>
+        <item name="android:statusBarColor">@color/pai_primary_dark</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="KeyButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/key_background</item>
+        <item name="android:textColor">@color/key_text_light</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="KeyButton.Special">
+        <item name="android:background">@drawable/key_background_special</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="KeyButton.Enter">
+        <item name="android:background">@drawable/key_background_enter</item>
+        <item name="android:textColor">@color/key_text_enter</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

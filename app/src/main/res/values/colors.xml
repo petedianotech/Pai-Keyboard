@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pai_primary">#6366F1</color>
+    <color name="pai_primary_dark">#4F46E5</color>
+    <color name="pai_accent">#22D3EE</color>
+
+    <color name="kb_bg_light">#F8FAFC</color>
+    <color name="kb_bg_dark">#0F172A</color>
+
+    <color name="key_bg_light">#FFFFFF</color>
+    <color name="key_bg_dark">#1E293B</color>
+    <color name="key_bg_special_light">#E2E8F0</color>
+    <color name="key_bg_special_dark">#334155</color>
+    <color name="key_bg_enter">#6366F1</color>
+    <color name="key_bg_enter_pressed">#4F46E5</color>
+
+    <color name="key_text_light">#0F172A</color>
+    <color name="key_text_dark">#F1F5F9</color>
+    <color name="key_text_enter">#FFFFFF</color>
+
+    <color name="key_pressed_light">#E0E7FF</color>
+    <color name="key_pressed_dark">#312E81</color>
+
+    <color name="suggestion_bg">#FFFFFF</color>
+    <color name="suggestion_text">#1E293B</color>
+</resources>
