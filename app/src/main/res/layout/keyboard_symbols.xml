@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/symbols_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/keyboard_background"
+    android:paddingTop="6dp"
+    android:paddingBottom="8dp"
+    android:paddingHorizontal="4dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp">
+        <Button style="@style/KeyButton" android:id="@+id/sym_1" android:text="1" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_2" android:text="2" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_3" android:text="3" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_4" android:text="4" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_5" android:text="5" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_6" android:text="6" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_7" android:text="7" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_8" android:text="8" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_9" android:text="9" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_0" android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp">
+        <Button style="@style/KeyButton" android:id="@+id/sym_at" android:text="@" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_hash" android:text="#" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_dollar" android:text="$" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_percent" android:text="%" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_amp" android:text="&" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_star" android:text="*" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_minus" android:text="-" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_plus" android:text="+" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_eq" android:text="=" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_slash" android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp" android:paddingHorizontal="8dp">
+        <Button style="@style/KeyButton" android:id="@+id/sym_underscore" android:text="_" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_lt" android:text="<" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_gt" android:text=">" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_bracket_l" android:text="[" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_bracket_r" android:text="]" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_brace_l" android:text="{" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_brace_r" android:text="}" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_pipe" android:text="|" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_backslash" android:text="\\" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp">
+        <Button style="@style/KeyButton.Special" android:id="@+id/sym_more" android:text="=\\<" android:layout_weight="1.4" android:textSize="13sp" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_quote" android:text=""" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_apostrophe" android:text="\'" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_colon" android:text=":" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_semicolon" android:text=";" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_excl" android:text="!" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_question" android:text="?" />
+        <Button style="@style/KeyButton.Special" android:id="@+id/sym_delete" android:text="⌫" android:layout_weight="1.4" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button style="@style/KeyButton.Special" android:id="@+id/sym_abc" android:text="ABC" android:layout_weight="1.5" android:textSize="13sp" />
+        <Button style="@style/KeyButton.Special" android:id="@+id/sym_emoji" android:text="😊" android:layout_weight="1.1" android:textSize="18sp" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_comma" android:text="," android:layout_weight="1" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_space" android:text="@string/key_space" android:layout_weight="4.2" android:textSize="14sp" />
+        <Button style="@style/KeyButton" android:id="@+id/sym_period" android:text="." android:layout_weight="1" />
+        <Button style="@style/KeyButton.Enter" android:id="@+id/sym_enter" android:text="↵" android:layout_weight="1.5" />
+    </LinearLayout>
+</LinearLayout>
